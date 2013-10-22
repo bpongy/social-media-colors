@@ -1,14 +1,5 @@
-
-<!--
-	
-	liste et couleurs à choper ici: http://simpleicons.org/
-	
--->
-
-
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -43,12 +34,29 @@
 		.color span { display: block; padding: 0.15em 0; font-size: 14px; color: #777; }
 		
 		code { background-color: #f8f8f8; color: #888; }
+		
+		
+		#colophon { padding-top: 50px; min-height: 180px; }
+		#colophon .bt {
+			display: inline-block;
+			width: 190px;
+			height: 50px;
+		}
 
 	</style>
 </head>
 
-<body>
+<!-- todo: http://simpleicons.org/ -->
 
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=130656173625053";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <header id="top">
 	<div class="container">
 		<h1>Social Media Colors</h1>
@@ -377,7 +385,37 @@
 
 <footer id="colophon">
 	<div class="container text-center">
-		<p></p>
+
+
+
+
+
+		<div class="bt bt-tw">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Social networks color palette. #css #bookmarklet" data-via="redpik">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+		
+		<div class="bt bt-fb">
+			<div class="fb-like" data-href="http://redpik.github.io/social-media-colors/" data-width="150" data-height="50" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+		</div>
+		
+		<div class="bt bt-gp">
+			<div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://redpik.github.io/social-media-colors/"></div>
+			<script type="text/javascript">
+			  (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/plusone.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+		</div>
+
+
+
+
+
+
+
 	</div>
 </footer>
 
